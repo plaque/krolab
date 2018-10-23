@@ -11,17 +11,17 @@ router.route('/posts')
             posts = [Post.findById(id, function(err, post){ return post})]
             return res.json({'posts': posts});
         }
-	 );
+	 )
     .post(
         function(req,res){
             return res.json({'posts': []});
         }
-	 );
+	 )
     .put(
         function(req,res){
             return res.json({'posts': []});
         }
-	 );
+	 )
     .delete(
         function(req,res){
             return res.json({'posts': []});
